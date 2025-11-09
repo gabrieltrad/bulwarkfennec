@@ -9,5 +9,6 @@ class build
         class reset{};
 		    class move {};
         class place {};
+		class rotate {};
     };
 };

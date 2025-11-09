@@ -447,6 +447,11 @@ BUILDITEMS = [
     [500, 	"Static AT",           "B_static_AT_F",            			0, 0.5, false, 4],
 	[1000, "Spike AA",             "I_static_AA_F",					  180,   1, false, 4],
     [7500, "Autonomous HMG",       "B_HMG_01_A_F",                    180, 3.5,  true, 4],
+    [800,  "Storage box small",    "Box_NATO_Support_F",                0,   1, false, 4],
+	[10000, "Ammo Truck",		   "O_Truck_02_Ammo_F",  	  		   90, 3.5, false, 4],
+	[2025, 	"Repair Truck",		   "C_Truck_02_box_F",  	   		   90, 3.5, false, 4],
+	[25000,	"Optimus Prime",   	   "WBK_WRS_WGP1_Ver1",       		    0, 3.5,  true, 4],
+    [1200, "Storage box large",    "Box_NATO_AmmoVeh_F",                0,   1, false, 4],
     [400,  "Large Ramp",           "Land_VR_Slope_01_F",                0,   4, false, 2],
 	[950,  "Stairs",               "Land_GH_Stairs_F",                180,   4, false, 3],
 	[500,  "Bunker Block",         "Land_Bunker_01_blocks_3_F",         0,   2, false, 2],
@@ -457,21 +462,16 @@ BUILDITEMS = [
 	[5250, "H-Barrier Tower",      "Land_BagBunker_Tower_F",            0, 5.2, false, 2],
 	[1000, "Double H-Barrier",     "Land_HBarrierWall4_F",              0,   4, false, 2],
     [750,  "Ladder",               "Land_PierLadder_F",                 0,   1, false, 0],
-    [800,  "Storage box small",    "Box_NATO_Support_F",                0,   1, false, 4],
     [1000, "Hallogen Lamp",        "Land_LampHalogen_F",               90,   1, false, 0],
-    [1200, "Storage box large",    "Box_NATO_AmmoVeh_F",                0,   1, false, 4],
-	[2025, 	"Repair Truck",		   "C_Truck_02_box_F",  	   		   90,   2, false, 5],
     [3000, "Small Bunker",         "Land_BagBunker_Small_F",          180,   3, false, 2],
     [4500, "Pillbox",              "Land_PillboxBunker_01_hex_F",      90, 2.5, false, 3],
-	[500, "Torre de metal", 		   "Land_Hlaska", 					0,   3, false, 3],
+	[500, "Torre de metal", 	   "Land_Hlaska", 					    0,   3, false, 3],
 	[2050, "Tanoa ATC",            "Land_Airport_01_controlTower_F",  180,   5, false, 3],
 	[5000, "Castle Tower",    	   "Land_Helfenburk",				  270,   9, false, 3],
     [6000, "Guard Tower",          "Land_Cargo_Patrol_V3_F",            0, 3.5, false, 3],
 	[5000, "Emergency Medical Supplies",	"C_IDAP_supplyCrate_F",   180,   1, false, 5],
 	[9500, "Modular Bunker",       "Land_Bunker_01_Small_F",          180,   6, false, 3],
-	[10000, "Ammo Truck",		    "O_Truck_02_Ammo_F",  	  		   90,   2, false, 5],
-	[25000,	"Optimus Prime",   	   "WBK_WRS_WGP1_Ver1",       		    0, 3.5,  true, 5],
-	[31039, "Flag (Based)",     "Flag_GrgTrans_F",                      0,0.25, false, 0]
+	[31039, "Flag (Based)",        "Flag_GrgTrans_F",                   0,0.25, false, 0]
 ];
 
  _indexed = [];{_indexed pushBack (_x + [_forEachIndex + 1]);  // append index at end

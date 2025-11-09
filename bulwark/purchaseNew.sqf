@@ -22,6 +22,7 @@ if(_itemIndex < 8000) then {
 	_shopDir   = (BULWARK_BUILDITEMS select _itemIndex) select 3;
 	_VecRadius = (BULWARK_BUILDITEMS select _itemIndex) select 4;
 	_vechAi    = (BULWARK_BUILDITEMS select _itemIndex) select 5;
+	_vechcat   = (BULWARK_BUILDITEMS select _itemIndex) select 6;
 
 	// Script was passed an invalid number
 	if(_shopClass == "") exitWith {};
@@ -49,16 +50,26 @@ if(_itemIndex < 8000) then {
 
 	sleep 0.1;
 
-	if (objPurchase) then {
+	if (objPurchase) then 
+	{
 		closeDialog 0;
+	// evitar que veiculos clipem no chao
+	if (_vechcat == 4) then { 
+		clearItemCargoGlobal shopVehic;
+		clearWeaponCargoGlobal shopVehic;
+		clearMagazineCargoGlobal shopVehic;
+		clearBackpackCargoGlobal shopVehic;
+		[shopVehic, ShopCaller, [0,_VecRadius + 1.5,2.5], _shopDir] call build_fnc_pickup;
+		hint 'veiculo';
+	}else{
 
 		// If it's a container, make sure it's empty
 		clearItemCargoGlobal shopVehic;
 		clearWeaponCargoGlobal shopVehic;
 		clearMagazineCargoGlobal shopVehic;
 		clearBackpackCargoGlobal shopVehic;
-
 		[shopVehic, ShopCaller, [0,_VecRadius + 1.5,0.02], _shopDir] call build_fnc_pickup;
+		hint 'nao ser veiculo'};
 	};
 } else {
 	//Purchase support item
