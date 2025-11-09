@@ -18,7 +18,7 @@ lbClear _ctrl;
 _ctrl lbAdd format [_listFormat, "1 ", "Objetos menores"];
 _ctrl lbAdd format [_listFormat, "2 ", "Muros"];
 _ctrl lbAdd format [_listFormat, "3 ", "Prédios e bunkeres"];
-_ctrl lbAdd format [_listFormat, "4 ", "Torres"];
+_ctrl lbAdd format [_listFormat, "4 ", "Torretas e caixas"];
 _ctrl lbAdd format [_listFormat, "5 ", "Veículos"];
 _ctrl lbAdd format [_listFormat, "6 ", "debug"];
 ((findDisplay 9998) displayCtrl 1500) ctrlAddEventHandler ['LBSelChanged', {
