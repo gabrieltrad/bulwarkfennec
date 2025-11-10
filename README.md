@@ -1,5 +1,5 @@
 # Dynamic Bullwarks, Fennec Edition
-modificações por zats e inu 
+modificações por zats e inu. <p>
 Esse mod é uma versão bastante modificada do bullwark, com novos barricadas, balanceamento de loot, nova loja, novos inimigos e novas ondas.
 
 ### Nova loja
