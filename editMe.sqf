@@ -438,8 +438,8 @@ BULWARK_SUPPORTITEMS = [
  */
 /*	[preço, 'nome estetico','id',rotaçao,distancia, ia, categoria], */
 BUILDITEMS = [
-    [1,    "VLC Media Player",	   "RoadCone_F",                        0,   0, false, 0],
-    [1,    "Flag (e621)",	       "Flag_e621_F",                       0, .25, false, 0],
+    [10,    "VLC Media Player",	   "RoadCone_F",                        0,   0, false, 0],
+    [10,    "Flag (e621)",	       "Flag_e621_F",                       0, .25, false, 0],
     [10,   "Placa de mina",        "Land_Sign_MinesDanger_English_F",   0,   0, false, 0],
     [10,   "Road Barrier",	       "RoadBarrier_F",                     0,   1, false, 0],
     [10,   "Road Barrier (Small)", "RoadBarrier_small_F",               0,  .5, false, 0],
@@ -480,10 +480,10 @@ BUILDITEMS = [
 	[1000, "Spike AA",             "I_static_AA_F",					  180,   1, false, 3],
     [7500, "Autonomous HMG",       "B_HMG_01_A_F",                    180, 3.5,  true, 3],
     [800,  "Storage box small",    "Box_NATO_Support_F",                0,   1, false, 3],
+	[2000,  "Towing Tractor", 	   "CUP_B_TowingTractor_CZ", 		   90,   3, false, 4],
+	[2000, 	"Repair Truck",		   "C_Truck_02_box_F",  	   		   90, 3.5, false, 4],
 	[10000, "Ammo Truck",		   "O_Truck_02_Ammo_F",  	  		   90, 3.5, false, 4],
-	[2025, 	"Repair Truck",		   "C_Truck_02_box_F",  	   		   90, 3.5, false, 4],
-	[5, 	"AH-6 Little Bird",	   "B_Heli_light_01_dynamicLoadout_F", 90,   5, false, 4],
-	[0,  "Towing Tractor", 	   "CUP_B_TowingTractor_CZ", 		   90,   3, false, 4],
+	[12500, 	"AH-6 Little Bird",	   "B_Heli_light_01_dynamicLoadout_F", 90,   5, false, 4],
 	[25000,	"Optimus Prime",   	   "WBK_WRS_WGP1_Ver1",       		    0, 3.5,  true, 4],
     [1200, "Storage box large",    "Box_NATO_AmmoVeh_F",                0,   1, false, 3],
     [400,  "Large Ramp",           "Land_VR_Slope_01_F",                0,   4, false, 2],
@@ -500,12 +500,12 @@ BUILDITEMS = [
 	[500, "Torre de metal", 	   "Land_Hlaska", 					    0,   3, false, 2],
 	[2050, "Tanoa ATC",            "Land_Airport_01_controlTower_F",  180,   5, false, 2],
 	[5000, "Castle Tower",    	   "Land_Helfenburk",				  270,   9, false, 2],
-	[1, "Bulwark Builder (WIP)", 	   "Land_RepairDepot_01_green_F", 		90,   4, false, 2],
+	[3000, "Bulwark Builder (WIP)", 	   "Land_RepairDepot_01_green_F", 		90,   4, false, 2],
     [6000, "Guard Tower",          "Land_Cargo_Patrol_V3_F",            0, 3.5, false, 2],
 	[5000, "Emergency Medical Supplies",	"C_IDAP_supplyCrate_F",   180,   1, false, 3],
 	[9500, "Modular Bunker",       "Land_Bunker_01_Small_F",          180,   6, false, 2],
 	[9500, "Modular Bunker (Tall)", "Land_Bunker_01_Tall_F", 			0, 	 6, false, 2],
-	[-1, "garg?", "Alsatian_Random_Visible_F", 							0, 0.5, false, 0], 
+	[2, "garg?", "Alsatian_Random_Visible_F", 							0, 0.5, false, 0], 
 	[31039, "Flag (Based)",        "Flag_GrgTrans_F",               0,0.25, false, 0]
 ];
 

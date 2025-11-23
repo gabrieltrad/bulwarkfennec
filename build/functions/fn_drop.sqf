@@ -16,12 +16,19 @@ _object setVehiclePosition [_object, [], 0, 'CAN_COLLIDE'],
 		_object setPosASL (getPosASL _object vectorAdd [0,0, 10]);
 	};
 if (_object isKindOf "AllVehicles") then { 
-[
-	_object,
+[_object,
 	[
 		'<t color="#ffa07a">Vender veículo</t>',
 		'[_this select 0, _this select 1] call build_fnc_sell;',
 		'', 1, false, false, 'true', 'true', 5
+	]
+] remoteExec ['addAction', 0];
+[
+	_object,
+	[
+		'<t color="#ffffff">Mover Veículo</t>',
+		'[_this select 0, _this select 1] call build_fnc_pickup;',
+		[0,0,0.5],2,false,false,'true','true',5
 	]
 ] remoteExec ['addAction', 0];
 if (typeof _object == 'CUP_B_TowingTractor_CZ') then{
@@ -30,19 +37,22 @@ _object,
 	[
 		'<t color="#FFFF00">Pepare Tow</t>',
 		'[_this select 0, _this select 1] call CUP_fnc_prepareTow;',
-		'', 1, false, false, 'true', 'true', 5
+		'', 1, false, false, 'true', 'true', 2.5
 	]
 ] remoteExec ['addAction', 0];
 [
 _object,
 	[
-		'<t color="#FFFF00">Relase Tow</t>',
+		'<t color="#FFFF00">Release Tow</t>',
 		'[_this select 0, _this select 1] call CUP_fnc_releaseTow;',
-		'', 1, false, false, 'true', 'true', 5
+		'', 1, false, false, 'true', 'true', 2.5
 	]
-] remoteExec ['addAction', 0];
+] remoteExec ['addAction', 0];};}
+else {
+if (typeof _object == 'Land_RepairDepot_01_green_F') then{
+[_object,
+["<t color='#00ff00'>" + "Shopee", "[] spawn bulwark_fnc_purchaseGuiNew; ShopCaller = _this select 1", "",1.5, false,false, "true", "true", 5]]remoteExec ["addAction", 0, true];
 };
-} else {
 [
 	_object,
 	[
