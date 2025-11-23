@@ -19,17 +19,15 @@ if (!(player getVariable "buildItemHeld")) then {
 		{
 			[_object, _x] remoteExec ["disableCollisionWith", 0];
 		} forEach playableUnits;
-
 		[_object] remoteExec ["removeAllActions", 0];
-
 		_caller addAction [
-			"<t color='#00ffff'>Drop Object (Snap To Ground)</t>",
+			"<t color='#00ffff'>Pôr Objeto (Snap To Ground)</t>",
 			'[_this select 3, _this select 1, _this select 2] call build_fnc_drop;',
 			_object
 		];
 
 		_caller addAction [
-			"<t color='#00ffff'>Place Object (Floating)</t>",
+			"<t color='#00ffff'>Pôr objeto (Floating)</t>",
 			'[_this select 3, _this select 1, _this select 2] call build_fnc_place;',
 			_object
 		];

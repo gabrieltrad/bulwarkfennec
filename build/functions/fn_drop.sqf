@@ -15,6 +15,34 @@ _object setVehiclePosition [_object, [], 0, 'CAN_COLLIDE'],
 		if (typeOf _object == "Land_Panelak3") then {
 		_object setPosASL (getPosASL _object vectorAdd [0,0, 10]);
 	};
+if (_object isKindOf "AllVehicles") then { 
+[
+	_object,
+	[
+		'<t color="#ffa07a">Vender veículo</t>',
+		'[_this select 0, _this select 1] call build_fnc_sell;',
+		'', 1, false, false, 'true', 'true', 5
+	]
+] remoteExec ['addAction', 0];
+if (typeof _object == 'CUP_B_TowingTractor_CZ') then{
+[
+_object,
+	[
+		'<t color="#FFFF00">Pepare Tow</t>',
+		'[_this select 0, _this select 1] call CUP_fnc_prepareTow;',
+		'', 1, false, false, 'true', 'true', 5
+	]
+] remoteExec ['addAction', 0];
+[
+_object,
+	[
+		'<t color="#FFFF00">Relase Tow</t>',
+		'[_this select 0, _this select 1] call CUP_fnc_releaseTow;',
+		'', 1, false, false, 'true', 'true', 5
+	]
+] remoteExec ['addAction', 0];
+};
+} else {
 [
 	_object,
 	[
@@ -64,7 +92,7 @@ _object setVehiclePosition [_object, [], 0, 'CAN_COLLIDE'],
 		[0,0,0.5],2,false,false,'true','true',5
 	]
 ] remoteExec ['addAction', 0];
-
+};
 _caller setVariable ["buildItemHeld", false, true];
 _object setVariable ["buildItemHeld", false, true];
 [mainZeus, [[_object], true]] remoteExec ["addCuratorEditableObjects", 0, true];

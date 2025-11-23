@@ -19,6 +19,6 @@ Ataque de helicóptero. (WIP. por Inu)
 ### A implementar
 - sistema de desbloqueio por nivel para a loja
 - helicóptero de ataque em ondas posteriores
-- Onda especial de Juggernaut
+- Onda especial de Juggernaut (por inu)
 - Suporte de UCAV
-- Sistema de desbloqueio de itens para a loja de acordo com a onda
+- ~~Sistema de desbloqueio de itens para a loja de acordo com a onda~~ cancelado, os preços serão usados para balanceamento

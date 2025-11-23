@@ -92,8 +92,8 @@ class CfgDebriefing
 	class End2
 	{
 		title = "[BULWARK SAFE]";
-		subtitle = "You Won";
-		description = "Your bulwark is secure";
+		subtitle = "Bulwark Segura";
+		description = "Bulwark Segura";
 		pictureBackground = "";
 		picture = "b_inf";
 		pictureColor[] = {0.0,0.3,0.6,1};
@@ -300,7 +300,7 @@ class Params
 		title = "Time between rounds";
 		values[] = {0, 15, 30, 60, 90, 120, 180, 240};
 		texts[] = {"0", "15 Seconds", "30 Seconds", "1 Minute", "1 Minute 30 Seconds", "2 Minutes", "3 Minutes", "4 Minutes"};
-		default = 15;
+		default = 90;
 	};
 
 	class MAX_WAVES
@@ -484,7 +484,7 @@ class Params
 		title = "Kill points players start with";
 		values[] = {0, 250, 500, 1000, 2500, 5000, 10000};
 		texts[] = {"0", "250", "500", "1000", "2500", "5000", "10000"};
-		default = 99999;
+		default = 100;
 	};
 
 	class SUPPORT_MENU

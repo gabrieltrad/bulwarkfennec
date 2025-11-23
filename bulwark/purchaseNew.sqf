@@ -60,7 +60,7 @@ if(_itemIndex < 8000) then {
 		clearMagazineCargoGlobal shopVehic;
 		clearBackpackCargoGlobal shopVehic;
 		[shopVehic, ShopCaller, [0,_VecRadius + 1.5,2.5], _shopDir] call build_fnc_pickup;
-		hint 'veiculo';
+		
 	}else{
 
 		// If it's a container, make sure it's empty
@@ -68,8 +68,8 @@ if(_itemIndex < 8000) then {
 		clearWeaponCargoGlobal shopVehic;
 		clearMagazineCargoGlobal shopVehic;
 		clearBackpackCargoGlobal shopVehic;
-		[shopVehic, ShopCaller, [0,_VecRadius + 1.5,0.02], _shopDir] call build_fnc_pickup;
-		hint 'nao ser veiculo'};
+		[shopVehic, ShopCaller, [0,_VecRadius + 1.5,0.02], _shopDir] call build_fnc_pickup
+		};
 	};
 } else {
 	//Purchase support item
