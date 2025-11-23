@@ -12,6 +12,7 @@
 HOSTILE_LEVEL_1 = List_Bandits;  // Wave 0 >
 HOSTILE_LEVEL_2 = List_INDEP;    // Wave 5 >
 HOSTILE_LEVEL_3 = List_Viper;    // Wave 10 >
+HOSTILE_JUGGER  = ["TT_Juggernaut"];
 HOSTILE_ARMED_CARS = List_Armour;//expects vehicles
 HOSTILE_ARMOUR = List_ArmedCars; //expects vehicles
 POINT_BANK_INIT_AMOUNT 		   = ("POINT_BANK_INIT_AMOUNT" call BIS_fnc_getParamValue);
@@ -233,6 +234,7 @@ LOOT_WHITELIST_MODE = 1;
 /* Fill with classname arrays: ["example_item_1", "example_item_2"] */
 /* To use Whitelisting there MUST be at least one applicaple item in each LOOT_WHITELIST array*/
 LOOT_WHITELIST_WEAPON = [
+    "CUP_srifle_VSSVintorez",
 	"CUP_arifle_AK101_railed",
     "CUP_arifle_AK107_GL_railed",
     "arifle_AK12_GL_F",
@@ -244,7 +246,13 @@ LOOT_WHITELIST_WEAPON = [
     "OSS_Lightning_Rifle",
     "arifle_TRG20_F",
     "Cup_sgun_CZ584_RIS",
+    "CUP_sgun_SPAS12",
+    "CUP_sgun_slamfire",
+    "CUP_sks",
     "CUP_arifle_CZ805_GL",
+    "CUP_srifle_CZ550_Rail",
+    "CUP_srifle_CZ750",
+    "CUP_sgun_CZ584_RIS",
     "CUP_arifle_FNFAL5061_wooden_railed",
     "CUP_Famas_F1_Wood",
     "LMG_03_F",
@@ -260,6 +268,7 @@ LOOT_WHITELIST_WEAPON = [
     "CUP_arifle_L85A2_GL",
     "CUP_srifle_M107_Pristine",
     "CUP_sgun_M1014_Entry_vfg",
+    "CUP_sgun_AA12",
     "CUP_srifle_M14",
     "CUP_arifle_Colt727_M203",
     "OSS_M1867Wern",
@@ -269,14 +278,33 @@ LOOT_WHITELIST_WEAPON = [
     "CUP_lmg_m249_pip1",
     "CUP_arifle_HK_M27_AG36",
     "CUP_arifle_M4_MOE_BW",
-    "CUP_arifle_M4A1_BUIS_camo_GL",
+    "CUP_arifle_M4A1_black",
+    "CUP_arifle_M4A1_BUIS_GL",
     "CUP_smg_Mac10_rail",
+    "CUP_smg_saiga9",
+    "CUP_sgun_saiga12K",
+    "CUP_Srifle_Mosin_Nagat",
+    "CUP_Srifle_M40A3",
+    "CUP_smg_SA61",
     "CUP_lmg_MG3_rail",
+    "CUP_arifle_IMI_Romat",
+    "CUP_srifle_Rengmiton700",
     "CUP_lmg_minimi_railed",
+    "CUP_lmg_Pecheneg",
+    "CUP_srifle_M21",
+    "CUP_srifle_M24_blk",
+    "CUP_srifle_kskv",
+    "CUP_arifle_M16A2",
+    "CUP_hgun_BallisticShield_Armed_M9",
+    "CUP_sgun_M1014",
+    "CUP_smg_m3a1",
+    "CUP_arifle_L82A2",
     "CUP_arifle_Mk16_CQC_EGLM_black",
     "CUP_arifle_Mk17_CQC_Black",
-    "CUP_srifle_mk18_wdl",
-    "CUP_smg_MP5A5_Rail",
+    "CUP_srifle_mk18_blk",
+    "CUP_smg_MP5A5",
+    "CUP_srifle_Mk12SPR",
+    "CUP_smg_MP5A5SD6",
     "CUP_arifle_OTS14_GROZA_762",
     "SMG_03C_hex",
 	"GARG_Gren_M202_F",
@@ -427,6 +455,7 @@ BUILDITEMS = [
     [100,  "Wood Wall (Tall)",     "Land_Shoot_House_Wall_F",           0, 1.2, false, 1],
     [115,  "Razor Fence",          "Land_Mil_WiredFence_F",             0,   4, false, 1],
     [115,  "Czech Hedgehog",       "Land_CzechHedgehog_01_new_F",       0,   1, false, 1],
+	[1000, "Dragon Teeth row", 	"HHedgehog_concreteBig", 				0,   3, false, 1],
 	[125,  "Razorwire Barrier",    "Land_Razorwire_F",                  0,   1, false, 1],
 	[10,   "Sandbag (End)",	       "Land_BagFence_End_F",          		0,   1, false, 1],
 	[25,   "Sandbag (Corner)",	   "Land_BagFence_Corner_F",            0,   1, false, 1],
@@ -447,11 +476,13 @@ BUILDITEMS = [
 	[2000, 	"Static HMG",          "B_HMG_01_high_F",          			0, 0.5, false, 3],
     [2000, 	"Static GMG",          "B_GMG_01_high_F",          			0, 0.5, false, 3],
     [500, 	"Static AT",           "B_static_AT_F",            			0, 0.5, false, 3],
+	[2000, "Mk 6 Mortar", "O_G_Mortar_01_F", 							0, 1, 	false, 3],
 	[1000, "Spike AA",             "I_static_AA_F",					  180,   1, false, 3],
     [7500, "Autonomous HMG",       "B_HMG_01_A_F",                    180, 3.5,  true, 3],
     [800,  "Storage box small",    "Box_NATO_Support_F",                0,   1, false, 3],
 	[10000, "Ammo Truck",		   "O_Truck_02_Ammo_F",  	  		   90, 3.5, false, 4],
 	[2025, 	"Repair Truck",		   "C_Truck_02_box_F",  	   		   90, 3.5, false, 4],
+	[5, 	"AH-6 Little Bird",	   "B_Heli_light_01_dynamicLoadout_F", 90,   5, false, 4],
 	[25000,	"Optimus Prime",   	   "WBK_WRS_WGP1_Ver1",       		    0, 3.5,  true, 4],
     [1200, "Storage box large",    "Box_NATO_AmmoVeh_F",                0,   1, false, 3],
     [400,  "Large Ramp",           "Land_VR_Slope_01_F",                0,   4, false, 2],
@@ -468,6 +499,7 @@ BUILDITEMS = [
 	[500, "Torre de metal", 	   "Land_Hlaska", 					    0,   3, false, 2],
 	[2050, "Tanoa ATC",            "Land_Airport_01_controlTower_F",  180,   5, false, 2],
 	[5000, "Castle Tower",    	   "Land_Helfenburk",				  270,   9, false, 2],
+	[1, "Bulwark Builder (WIP)",   "Land_RepairDepot_01_green_F", 		90,   4, false, 2],
     [6000, "Guard Tower",          "Land_Cargo_Patrol_V3_F",            0, 3.5, false, 2],
 	[5000, "Emergency Medical Supplies",	"C_IDAP_supplyCrate_F",   180,   1, false, 3],
 	[9500, "Modular Bunker",       "Land_Bunker_01_Small_F",          180,   6, false, 2],
@@ -475,7 +507,6 @@ BUILDITEMS = [
 	[-1, "garg?", "Alsatian_Random_Visible_F", 							0, 0.5, false, 0], 
 	[31039, "Flag (Based)",        "Flag_GrgTrans_F",               0,0.25, false, 0]
 ];
-
  _indexed = [];{_indexed pushBack (_x + [_forEachIndex + 1]);  // append index at end
 } forEach BUILDITEMS;
 BULWARK_BUILDITEMS = _indexed;
