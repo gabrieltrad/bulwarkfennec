@@ -70,6 +70,19 @@ if(_itemIndex < 8000) then {
 		clearBackpackCargoGlobal shopVehic;
 		[shopVehic, ShopCaller, [0,_VecRadius + 1.5,0.02], _shopDir] call build_fnc_pickup
 		};
+		if (_shopClass == "C_IDAP_supplyCrate_F") then {
+		shopVehic addBackpackCargoGlobal ["B_Kitbag_rgr", 2];
+		shopVehic addItemCargoGlobal ["ItemCompass", 8];
+		shopVehic addItemCargoGlobal ["ItemGPS", 2];
+		shopVehic addItemCargoGlobal ["B_UavTerminal", 1];
+		shopVehic addItemCargoGlobal ["WRS_Console", 1];
+		shopVehic addItemCargoGlobal ["FirstAidKit", 20];
+		shopVehic addItemCargoGlobal ["Medikit", 6];
+		shopVehic addItemCargoGlobal ["Toolkit", 1];
+		};
+		if (_shopClass == "Flag_GrgTrans_F") then {
+			[shopVehic, true] call ace_arsenal_fnc_initBox;
+		};
 	};
 } else {
 	//Purchase support item

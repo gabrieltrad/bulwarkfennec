@@ -12,7 +12,7 @@ class EditorData
 	};
 	class ItemIDProvider
 	{
-		nextID=626;
+		nextID=723;
 	};
 	class MarkerIDProvider
 	{
@@ -24,10 +24,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={4794.6724,268.10269,6751.3623};
-		dir[]={-0.73221922,-0.34966692,0.58445537};
-		up[]={-0.27328417,0.93687403,0.21813466};
-		aside[]={0.6238355,1.4901161e-08,0.78155565};
+		pos[]={5645.981,248.55344,6346.8813};
+		dir[]={0.54684937,-0.69103497,-0.47268012};
+		up[]={0.52280146,0.72282124,-0.45189381};
+		aside[]={-0.6539377,1.4901161e-08,-0.7565484};
 	};
 };
 binarizationWanted=0;
@@ -46,14 +46,13 @@ addons[]=
 	"A3_Characters_F_Exp_Civil",
 	"A3_Characters_F_Exp",
 	"A3_Ui_F",
-	"A3_Modules_F_Curator_Curator",
-	"Garg_Furry"
+	"A3_Modules_F_Curator_Curator"
 };
 class AddonsMetaData
 {
 	class List
 	{
-		items=10;
+		items=9;
 		class Item0
 		{
 			className="A3_Characters_F";
@@ -114,12 +113,6 @@ class AddonsMetaData
 			name="Arma 3 Zeus Update - Scripted Modules";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
-		};
-		class Item9
-		{
-			className="Garg_Furry";
-			name="AlphaGarg Furry Data";
-			author="AlphaGarg";
 		};
 	};
 };
@@ -739,7 +732,7 @@ class Mission
 						{
 							class uniform
 							{
-								typeName="U_C_Man_casual_1_F";
+								typeName="U_I_Wetsuit";
 								isBackpack=0;
 							};
 							map="ItemMap";
@@ -1562,7 +1555,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={4809.062,265.23776,6753.7271};
+						position[]={5652.0083,234.09192,6340.0396};
 					};
 					side="West";
 					flags=7;
@@ -1570,16 +1563,14 @@ class Mission
 					{
 						isPlayer=1;
 					};
-					id=625;
-					type="B_GFur_engineer_F";
-					atlOffset=-3.0517578e-05;
+					id=722;
+					type="B_soldier_repair_F";
 				};
 			};
 			class Attributes
 			{
 			};
-			id=624;
-			atlOffset=-3.0517578e-05;
+			id=721;
 		};
 	};
 };

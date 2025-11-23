@@ -24,18 +24,18 @@ while {true} do {
 
             // Warn the player that they're too far from the centre
             case ((_x distance2D bulwarkCity) > BULWARK_RADIUS * 0.99): {
-                ["<t color='#ff0000'>Atenção: Saindo da região do Bulwark!</t>", 0, 0.1, 2, 0] remoteExec ["BIS_fnc_dynamicText", _x];
+                ["<t color='#ff0000'>Volte imediatamente para a área do Bulwark!</t>", 0, 0.1, 2, 0] remoteExec ["BIS_fnc_dynamicText", _x];
             };
             case ((_x distance2D bulwarkCity) > BULWARK_RADIUS * 0.95): {
                 ["<t color='#ffff00'>Atenção: Saindo da região do Bulwark!</t>", 0, 0.1, 2, 0] remoteExec ["BIS_fnc_dynamicText", _x];
             };
             case ((_x distance2D bulwarkCity) > BULWARK_RADIUS * 0.9): {
-                ["<t color='#ffffff'>Atenção! Volte imediatamente para a àrea do Bulwark!</t>", 0, 0.1, 2, 0] remoteExec ["BIS_fnc_dynamicText", _x];
+                ["<t color='#ffffff'>Atenção! Saindo da região do Bulwark!</t>", 0, 0.1, 2, 0] remoteExec ["BIS_fnc_dynamicText", _x];
             };
 			default {};}
 			else{
 			case ((_x distance2D bulwarkCity) > BULWARK_RADIUS * 0.99): {
-                ["<t color='#ff0000'>Atenção! Saindo da região do Bulwark! Você voltará para o Bulwark caso saia do veículo!</t>", 0, 0.1, 2, 0] remoteExec ["BIS_fnc_dynamicText", _x];
+                ["<t color='#ff0000'>Saindo da região do Bulwark! Você voltará para o Bulwark caso saia do veículo!</t>", 0, 0.1, 2, 0] remoteExec ["BIS_fnc_dynamicText", _x];
 				};
          };
         

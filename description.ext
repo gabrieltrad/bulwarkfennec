@@ -500,7 +500,7 @@ class Params
 		title = "Points per kill";
 		values[] = {10, 50, 100, 150, 200, 300};
 		texts[] = {"10","50","100","150","200","300"};
-		default = 100;
+		default = 250;
 	};
 
 	class SCORE_HIT
@@ -508,7 +508,7 @@ class Params
 		title = "Points per hit";
 		values[] = {0, 10, 20, 50, 100};
 		texts[] = {"0","10","20","50","100"};
-		default = 20;
+		default = 40;
 	};
 
 	class SCORE_DAMAGE_BASE
