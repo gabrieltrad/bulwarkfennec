@@ -12,7 +12,7 @@ class EditorData
 	};
 	class ItemIDProvider
 	{
-		nextID=723;
+		nextID=622;
 	};
 	class MarkerIDProvider
 	{
@@ -24,10 +24,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={5645.981,248.55344,6346.8813};
-		dir[]={0.54684937,-0.69103497,-0.47268012};
-		up[]={0.52280146,0.72282124,-0.45189381};
-		aside[]={-0.6539377,1.4901161e-08,-0.7565484};
+		pos[]={4712.7056,276.35339,6740.9414};
+		dir[]={0.060003381,-0.74744087,-0.66161305};
+		up[]={0.067510255,0.66432834,-0.74438584};
+		aside[]={-0.99591267,-3.7252903e-09,-0.090321869};
 	};
 };
 binarizationWanted=0;
@@ -37,7 +37,6 @@ addons[]=
 	"A3_Characters_F",
 	"universal_uniforms",
 	"A3_Weapons_F_Pistols_P07",
-	"jsrs_soundmod_2025_Beta",
 	"ace_realisticnames",
 	"ace_ballistics",
 	"A3_Weapons_F",
@@ -46,7 +45,8 @@ addons[]=
 	"A3_Characters_F_Exp_Civil",
 	"A3_Characters_F_Exp",
 	"A3_Ui_F",
-	"A3_Modules_F_Curator_Curator"
+	"A3_Modules_F_Curator_Curator",
+	"Garg_Furry"
 };
 class AddonsMetaData
 {
@@ -74,45 +74,44 @@ class AddonsMetaData
 		};
 		class Item3
 		{
-			className="jsrs_soundmod_2025_Beta";
-			name="JSRS Soundmod 2025 Beta";
-			author="LordJarhead";
-			url="https://www.arma3.com";
-		};
-		class Item4
-		{
 			className="ace_ballistics";
 			name="ACE3 - Ballistics";
 			author="ACE-Team";
 			url="https://ace3.acemod.org/";
 		};
-		class Item5
+		class Item4
 		{
 			className="ace_smallarms";
 			name="ACE3 - Small Arms";
 			author="ACE-Team";
 			url="https://ace3.acemod.org/";
 		};
-		class Item6
+		class Item5
 		{
 			className="A3_Characters_F_Exp";
 			name="Arma 3 Apex - Characters and Clothing";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item7
+		class Item6
 		{
 			className="A3_Ui_F";
 			name="Arma 3 - User Interface";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item8
+		class Item7
 		{
 			className="A3_Modules_F_Curator";
 			name="Arma 3 Zeus Update - Scripted Modules";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
+		};
+		class Item8
+		{
+			className="Garg_Furry";
+			name="AlphaGarg Furry Data";
+			author="AlphaGarg";
 		};
 	};
 };
@@ -732,7 +731,7 @@ class Mission
 						{
 							class uniform
 							{
-								typeName="U_I_Wetsuit";
+								typeName="U_C_Man_casual_1_F";
 								isBackpack=0;
 							};
 							map="ItemMap";
@@ -1555,22 +1554,24 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={5652.0083,234.09192,6340.0396};
+						position[]={23.561317,0.69301385,-6.082202};
 					};
 					side="West";
-					flags=7;
+					flags=3;
 					class Attributes
 					{
 						isPlayer=1;
 					};
-					id=722;
-					type="B_soldier_repair_F";
+					id=419;
+					type="B_GFur2_Soldier_TL_F";
+					atlOffset=52.621166;
 				};
 			};
 			class Attributes
 			{
 			};
-			id=721;
+			id=418;
+			atlOffset=52.621166;
 		};
 	};
 };

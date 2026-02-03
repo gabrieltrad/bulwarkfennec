@@ -40,4 +40,7 @@ switch (_type) do {
     case ("telePlode"): {
     [_player] call supports_fnc_telePlode;
     };
+	case ("reviveAll"): {
+	[_player] call supports_fnc_reviveAll;
+	};
 };

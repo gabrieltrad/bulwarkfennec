@@ -37,7 +37,7 @@ if (!SUPPORTMENU) then {
 		[_satSupport] remoteExec ['removeAllActions', 0];
 		_pointsMulti = ('SCORE_KILL' call BIS_fnc_getParamValue);
 		if (!SUPPORTMENU) then {
-			['intel',['Support','Suporte desbloqueado no Bulwark']] remoteExec ['BIS_fnc_showNotification', 0];
+			['intel',['Suporte desbloqueado no Bulwark']] remoteExec ['BIS_fnc_showNotification', 0];
 			['comNoise'] remoteExec ['playSound', 0];
 		};
 		SUPPORTMENU = true;

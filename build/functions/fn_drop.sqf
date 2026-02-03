@@ -1,7 +1,6 @@
 _object = _this select 0;
 _caller = _this select 1;
 _action = _this select 2;
-
 detach _object;
 
 {
@@ -18,7 +17,7 @@ _object setVehiclePosition [_object, [], 0, 'CAN_COLLIDE'],
 if (_object isKindOf "AllVehicles") then { 
 [_object,
 	[
-		'<t color="#ffa07a">Vender veículo</t>',
+		'<t color="#ffa07a">Remover veículo</t>',
 		'[_this select 0, _this select 1] call build_fnc_sell;',
 		'', 1, false, false, 'true', 'true', 5
 	]
@@ -27,8 +26,8 @@ if (_object isKindOf "AllVehicles") then {
 	_object,
 	[
 		'<t color="#ffffff">Mover Veículo</t>',
-		'[_this select 0, _this select 1] call build_fnc_pickup;',
-		[0,0,0.5],2,false,false,'true','true',5
+		'[_this select 0, _this select 1] call build_fnc_place;',
+		[0,0,0.5],2,false,false,'true','true', 5
 	]
 ] remoteExec ['addAction', 0];
 if (typeof _object == 'CUP_B_TowingTractor_CZ') then{

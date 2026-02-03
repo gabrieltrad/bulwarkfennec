@@ -7,7 +7,6 @@ detach _object;
 [_object, false] remoteExec ["enableSimulation", 0];
 [_object, _objectPos] remoteExec ["setPosATL", 0];
 [_object, true] remoteExec ["enableSimulation", 0];
-
 {
 	[_object, _x] remoteExec ['enableCollisionWith', 0];
 } forEach playableUnits;

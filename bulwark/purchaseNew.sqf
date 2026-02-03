@@ -59,7 +59,7 @@ if(_itemIndex < 8000) then {
 		clearWeaponCargoGlobal shopVehic;
 		clearMagazineCargoGlobal shopVehic;
 		clearBackpackCargoGlobal shopVehic;
-		[shopVehic, ShopCaller, [0,_VecRadius + 1.5,2.5], _shopDir] call build_fnc_pickup;
+		[shopVehic, ShopCaller, [0,_VecRadius + 1.5,2.0], _shopDir] call build_fnc_pickup;
 		
 	}else{
 
